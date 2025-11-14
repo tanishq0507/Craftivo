@@ -1,0 +1,70 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  /* 👈 allows boxes to move to the next line */
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.portfolio-box {
+  flex: 1 1 calc(33.33% - 20px);
+  /*  makes 3 boxes per row */
+  min-width: 200px;
+  max-width: 416px;
+  height: 400px;
+  /* background: steelblue; */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+.portfolio-box-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.portfolio-box-img img {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.portfolio-content {
+  z-index: 5;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.tags{
+  display: flex;
+  margin: 0px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags span{
+  background: violet;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.year{
+  margin: 0px 20px;
+}
