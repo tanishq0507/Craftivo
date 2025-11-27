@@ -136,6 +136,16 @@ a {
   margin-top: 10px;
 }
 
+.typed {
+  color: var(--accent-color, #ff0057);
+  font-weight: bold;
+}
+
+.typed-cursor {
+  font-size: 1em;
+  color: #ff0057;
+}
+
 .soc-btn {
   margin-top: 40px;
 }

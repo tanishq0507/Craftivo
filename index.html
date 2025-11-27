@@ -36,7 +36,10 @@
   <div class="background-container">
 
     <h1 class="heading">Hi, I'm Tanishq</h1>
-    <h2 class="sec_heading">I'm a Developer</h2>
+    <h2>I'm a <span class="typed" class="sec_heading"
+        data-typed-items="Designer, Developer, Freelancer, Photographer"></span></h2>
+
+    <!-- <h2 class="sec_heading">I'm a Developer</h2> -->
     <div class="soc-btn">
       <a href="#" class="s-btn"><i class="fa-brands fa-twitter"></i></a>
       <a href="#" class="s-btn"><i class="fa-brands fa-facebook"></i></a>
@@ -965,7 +968,7 @@
   </footer>
 
 
-   <!--  Copy-right things -->
+  <!--  Copy-right things -->
   <div class="copyright">
     <div class="copyright-container">
       <p>© Copyright <strong>Craftivo</strong> All Rights Reserved</p>
@@ -975,8 +978,22 @@
 
 
 
-<!-- end of html -->
+  <!-- end of html -->
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.Typed && document.querySelector('.typed')) {
+        const typed = new Typed('.typed', {
+          strings: document.querySelector('.typed').getAttribute('data-typed-items').split(', '),
+          typeSpeed: 100,     // typing speed in ms
+          backSpeed: 70,      // backspacing speed
+          backDelay: 1500,    // pause before backspacing
+          loop: true          // repeat forever
+        });
+      }
+    });
+  </script>
 
 </body>
 
